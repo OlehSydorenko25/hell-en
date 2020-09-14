@@ -37,11 +37,14 @@ p {
 }
 
 body {
+  font-family: 'MontserratB', sans-serif;
   margin: 0;
 }
 
 .container {
-  width: 280px;
+  width: 320px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }

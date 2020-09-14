@@ -22,10 +22,6 @@
   fill: #ff6b09;
 }
 
-.backdrop.is-hidden .modal {
-  transform: scale(0.8) translate(-50%, -50%);
-}
-
 .modal {
   position: absolute;
   top: 50%;
@@ -34,13 +30,37 @@
   height: 100%;
   width: 320px;
   transform: 50%;
+  padding: 0 20px;
 
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .modal-button {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 8%;
+
+    display: block;
+    width: 260px;
+    color: #ff6b09;
+    border: 2px solid #ff6b09;
+    padding: 14px 0;
+    margin-top: 50px;
+    text-align: center;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    &:hover,
+    &:focus {
+      background-color: #ff6b09;
+      color: #fff;
+    }
+  }
 
   .close-modal {
     position: absolute;
-    top: 20px;
+    top: 33px;
     right: 20px;
+    fill: #fff;
   }
 
   .modal-site-nav {
@@ -48,6 +68,14 @@
     margin-top: 50px;
 
     .link {
+      font-weight: 800;
+      font-size: 20px;
+
+      &:hover,
+      &:focus {
+        color: #ff6b09;
+      }
+
       &-item {
         color: #fff;
 
@@ -64,7 +92,7 @@
   }
 
   .modal-img {
-    margin-top: 30px;
+    margin-top: 38px;
     width: 80px;
     height: 28px;
   }

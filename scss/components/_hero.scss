@@ -1,0 +1,113 @@
+.hero {
+  .hero-title {
+    font-size: 20px;
+    line-height: 29px;
+    margin-top: 50px;
+  }
+
+  .hero-slogan {
+    margin-top: 30px;
+    color: #ccc;
+  }
+
+  .hero-subtitle {
+    b {
+      color: #ff6b09;
+    }
+  }
+
+  .hero-button {
+    display: block;
+    width: 260px;
+    height: 48px;
+    background-color: #ff6b09;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    color: #fff;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-img {
+    display: block;
+    margin: 0 auto;
+    width: 208px;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  .hero-benefits {
+    padding: 0 40px;
+    margin-top: 77px;
+
+    .title {
+      font-size: 13px;
+      line-height: 20px;
+      color: #18191d;
+    }
+
+    .item {
+      padding-left: 68px;
+      position: relative;
+
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+
+      &.icon1::before {
+        background-image: url(../../images/icon1.png);
+        content: '';
+        background-repeat: no-repeat;
+        background-position: 0 center;
+        background-size: contain;
+        display: inline-block;
+
+        height: 60px;
+        width: 60px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      &.icon2::before {
+        font-size: 13px;
+        line-height: 20px;
+        color: #18191d;
+        font-family: 'MontserratB', sans-serif;
+        padding-left: 68px;
+
+        background-image: url(../../images/icon2.png);
+        content: '';
+        background-repeat: no-repeat;
+        background-position: 0 center;
+        background-size: contain;
+        display: inline-block;
+
+        height: 60px;
+        width: 60px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      &.icon3::before {
+        background-image: url(../../images/icon3.png);
+        content: '';
+        background-repeat: no-repeat;
+        background-position: 0 center;
+        background-size: contain;
+        display: inline-block;
+
+        height: 60px;
+        width: 60px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}

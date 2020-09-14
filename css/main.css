@@ -1,5 +1,7 @@
 .header {
-  padding: 20px;
+  padding-top: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .header ul {
@@ -67,13 +69,16 @@ p {
 }
 
 body {
+  font-family: 'MontserratB', sans-serif;
   margin: 0;
 }
 
 .container {
-  width: 280px;
+  width: 320px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .backdrop {
@@ -100,11 +105,6 @@ body {
   fill: #ff6b09;
 }
 
-.backdrop.is-hidden .modal {
-  -webkit-transform: scale(0.8) translate(-50%, -50%);
-          transform: scale(0.8) translate(-50%, -50%);
-}
-
 .modal {
   position: absolute;
   top: 50%;
@@ -115,21 +115,49 @@ body {
   width: 320px;
   -webkit-transform: 50%;
           transform: 50%;
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0 20px;
+}
+
+.modal .modal-button {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 8%;
+  display: block;
+  width: 260px;
+  color: #ff6b09;
+  border: 2px solid #ff6b09;
+  padding: 14px 0;
+  margin-top: 50px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal .modal-button:hover, .modal .modal-button:focus {
+  background-color: #ff6b09;
+  color: #fff;
 }
 
 .modal .close-modal {
   position: absolute;
-  top: 20px;
+  top: 33px;
   right: 20px;
+  fill: #fff;
 }
 
 .modal .modal-site-nav {
   list-style: none;
   margin-top: 50px;
+}
+
+.modal .modal-site-nav .link {
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.modal .modal-site-nav .link:hover, .modal .modal-site-nav .link:focus {
+  color: #ff6b09;
 }
 
 .modal .modal-site-nav .link-item {
@@ -145,8 +173,115 @@ body {
 }
 
 .modal .modal-img {
-  margin-top: 30px;
+  margin-top: 38px;
   width: 80px;
   height: 28px;
+}
+
+.hero .hero-title {
+  font-size: 20px;
+  line-height: 29px;
+  margin-top: 50px;
+}
+
+.hero .hero-slogan {
+  margin-top: 30px;
+  color: #ccc;
+}
+
+.hero .hero-subtitle b {
+  color: #ff6b09;
+}
+
+.hero .hero-button {
+  display: block;
+  width: 260px;
+  height: 48px;
+  background-color: #ff6b09;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  color: #fff;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.hero .hero-img {
+  display: block;
+  margin: 0 auto;
+  width: 208px;
+  height: auto;
+  margin-top: 30px;
+}
+
+.hero .hero-benefits {
+  padding: 0 40px;
+  margin-top: 77px;
+}
+
+.hero .hero-benefits .title {
+  font-size: 13px;
+  line-height: 20px;
+  color: #18191d;
+}
+
+.hero .hero-benefits .item {
+  padding-left: 68px;
+  position: relative;
+}
+
+.hero .hero-benefits .item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.hero .hero-benefits .item.icon1::before {
+  background-image: url(../../images/icon1.png);
+  content: '';
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  background-size: contain;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero .hero-benefits .item.icon2::before {
+  font-size: 13px;
+  line-height: 20px;
+  color: #18191d;
+  font-family: 'MontserratB', sans-serif;
+  padding-left: 68px;
+  background-image: url(../../images/icon2.png);
+  content: '';
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  background-size: contain;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero .hero-benefits .item.icon3::before {
+  background-image: url(../../images/icon3.png);
+  content: '';
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  background-size: contain;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 /*# sourceMappingURL=main.css.map */
