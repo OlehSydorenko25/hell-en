@@ -1,0 +1,23 @@
+.header {
+  padding: 20px;
+
+  ul {
+    list-style: none;
+  }
+
+  .nav {
+    width: 280px;
+    display: flex;
+    align-items: center;
+
+    .logo-img {
+      margin-right: auto;
+    }
+
+    .menu-button {
+      background-color: inherit;
+      border: 0;
+      padding: 0;
+    }
+  }
+}
