@@ -437,7 +437,7 @@ body {
 }
 
 .hero .hero-benefits .item.icon1::before {
-  background-image: url(../../images/icon1.png);
+  background-image: url(./../images/icon1.png);
   content: '';
   background-repeat: no-repeat;
   background-position: 0 center;
@@ -451,7 +451,7 @@ body {
 }
 
 .hero .hero-benefits .item.icon2::before {
-  background-image: url(../../images/icon2.png);
+  background-image: url(./../images/icon2.png);
   content: '';
   background-repeat: no-repeat;
   background-position: 0 center;
@@ -465,7 +465,7 @@ body {
 }
 
 .hero .hero-benefits .item.icon3::before {
-  background-image: url(../../images/icon3.png);
+  background-image: url(./../images/icon3.png);
   content: '';
   background-repeat: no-repeat;
   background-position: 0 center;
