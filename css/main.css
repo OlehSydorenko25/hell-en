@@ -41,7 +41,6 @@
 }
 
 .header .nav {
-  width: 280px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,6 +50,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 .header .nav .site-nav3 {
@@ -83,13 +83,15 @@
 
 @media screen and (min-width: 768px) {
   .header .nav {
-    width: 728px;
+    width: 768px;
+    margin-bottom: 84px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .header .nav {
     width: 1280px;
+    margin-bottom: 45px;
   }
 }
 
@@ -289,12 +291,6 @@ body {
   color: #18191d;
 }
 
-@media screen and (max-width: 767px) {
-  .hero .hero-title {
-    margin-top: 50px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .hero .hero-title {
     font-size: 26px;
@@ -323,6 +319,13 @@ body {
   margin-bottom: 4px;
 }
 
+@media screen and (min-width: 1280px) {
+  .hero .hero-slogan {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
 .hero .hero-subtitle {
   width: 280px;
   color: #18191d;
@@ -336,12 +339,19 @@ body {
   color: #ff6b09;
 }
 
+@media screen and (min-width: 1280px) {
+  .hero .hero-subtitle {
+    font-size: 18px;
+    line-height: 22px;
+    width: auto;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero .hero-flex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 65px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -364,13 +374,23 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding: 14px 0;
 }
 
 @media screen and (min-width: 768px) {
   .hero .hero-button {
     margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero .hero-button {
+    margin-top: 40px;
+    height: 70px;
+    letter-spacing: 1.8px;
+    padding: 27px 0;
+    width: 305px;
+    font-size: 12px;
   }
 }
 
@@ -423,6 +443,13 @@ body {
   letter-spacing: 0.03em;
 }
 
+@media screen and (min-width: 1280px) {
+  .hero .hero-benefits .title {
+    padding-top: 30px;
+    min-width: 366px;
+  }
+}
+
 .hero .hero-benefits .item {
   padding-left: 68px;
   position: relative;
@@ -430,6 +457,12 @@ body {
   font-weight: 700;
   line-height: 20px;
   color: #18191d;
+}
+
+@media screen and (min-width: 1280px) {
+  .hero .hero-benefits .item {
+    padding-left: 90px;
+  }
 }
 
 .hero .hero-benefits .item:not(:last-child) {
@@ -440,7 +473,6 @@ body {
   background-image: url(./../images/icon1.png);
   content: '';
   background-repeat: no-repeat;
-  background-position: 0 center;
   background-size: contain;
   display: inline-block;
   height: 60px;
@@ -448,13 +480,19 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+@media screen and (min-width: 1280px) {
+  .hero .hero-benefits .item.icon1::before {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .hero .hero-benefits .item.icon2::before {
   background-image: url(./../images/icon2.png);
   content: '';
   background-repeat: no-repeat;
-  background-position: 0 center;
   background-size: contain;
   display: inline-block;
   height: 60px;
@@ -464,11 +502,17 @@ body {
   left: 0;
 }
 
+@media screen and (min-width: 1280px) {
+  .hero .hero-benefits .item.icon2::before {
+    width: 100px;
+    height: 100px;
+  }
+}
+
 .hero .hero-benefits .item.icon3::before {
   background-image: url(./../images/icon3.png);
   content: '';
   background-repeat: no-repeat;
-  background-position: 0 center;
   background-size: contain;
   display: inline-block;
   height: 60px;
@@ -476,5 +520,12 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+@media screen and (min-width: 1280px) {
+  .hero .hero-benefits .item.icon3::before {
+    width: 100px;
+    height: 100px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

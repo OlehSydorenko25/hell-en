@@ -5,10 +5,6 @@
     font-weight: 800;
     color: #18191d;
 
-    @media screen and (max-width: 767px) {
-      margin-top: 50px;
-    }
-
     @media screen and (min-width: 768px) {
       font-size: 26px;
       line-height: 33px;
@@ -33,6 +29,11 @@
 
     margin-top: 30px;
     margin-bottom: 4px;
+
+    @media screen and (min-width: 1280px) {
+      font-size: 18px;
+      line-height: 22px;
+    }
   }
 
   .hero-subtitle {
@@ -46,12 +47,17 @@
     b {
       color: #ff6b09;
     }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 18px;
+      line-height: 22px;
+      width: auto;
+    }
   }
 
-  @media screen and (min-width: 768px) {
-    .hero-flex {
+  .hero-flex {
+    @media screen and (min-width: 768px) {
       display: flex;
-      margin-top: 65px;
       align-items: center;
     }
   }
@@ -73,11 +79,19 @@
     margin-right: auto;
     align-items: center;
     text-align: center;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding: 14px 0;
 
     @media screen and (min-width: 768px) {
       margin-left: 0;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-top: 40px;
+      height: 70px;
+      letter-spacing: 1.8px;
+      padding: 27px 0;
+      width: 305px;
+      font-size: 12px;
     }
   }
 
@@ -117,6 +131,11 @@
       line-height: 20px;
       color: #111518;
       letter-spacing: 0.03em;
+
+      @media screen and (min-width: 1280px) {
+        padding-top: 30px;
+        min-width: 366px;
+      }
     }
 
     .item {
@@ -127,6 +146,10 @@
       line-height: 20px;
       color: #18191d;
 
+      @media screen and(min-width: 1280px) {
+        padding-left: 90px;
+      }
+
       &:not(:last-child) {
         margin-bottom: 30px;
       }
@@ -135,7 +158,6 @@
         background-image: url(./../images/icon1.png);
         content: '';
         background-repeat: no-repeat;
-        background-position: 0 center;
         background-size: contain;
         display: inline-block;
 
@@ -144,13 +166,17 @@
         position: absolute;
         top: 0;
         left: 0;
+
+        @media screen and (min-width: 1280px) {
+          width: 100px;
+          height: 100px;
+        }
       }
 
       &.icon2::before {
         background-image: url(./../images/icon2.png);
         content: '';
         background-repeat: no-repeat;
-        background-position: 0 center;
         background-size: contain;
         display: inline-block;
 
@@ -159,13 +185,17 @@
         position: absolute;
         top: 0;
         left: 0;
+
+        @media screen and (min-width: 1280px) {
+          width: 100px;
+          height: 100px;
+        }
       }
 
       &.icon3::before {
         background-image: url(./../images/icon3.png);
         content: '';
         background-repeat: no-repeat;
-        background-position: 0 center;
         background-size: contain;
         display: inline-block;
 
@@ -174,11 +204,12 @@
         position: absolute;
         top: 0;
         left: 0;
+
+        @media screen and (min-width: 1280px) {
+          width: 100px;
+          height: 100px;
+        }
       }
     }
   }
-
-  //   .hero-block{
-  //       w
-  //   }
 }
