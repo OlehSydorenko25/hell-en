@@ -37,21 +37,24 @@ p {
 }
 
 body {
-  font-family: 'MontserratB', sans-serif;
   margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #858585;
+  font-size: 11px;
+  line-height: 20px;
+  font-weight: 400;
 }
 
 .container {
   width: 320px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 20px;
 
   @media screen and (min-width: 768px) {
     width: 768px;
   }
 
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
   }
 }

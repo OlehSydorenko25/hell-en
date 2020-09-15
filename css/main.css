@@ -1,5 +1,12 @@
 .header {
-  padding-top: 35px;
+  padding-top: 26px;
+  padding-bottom: 50px;
+  background-image: url(../images/bg-tablet.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -300px;
+  position: relative;
 }
 
 .header .hero-button-2 {
@@ -20,6 +27,12 @@
     padding: 14px 0;
     margin-right: 40px;
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header .hero-button-2 {
+    margin-right: 0;
   }
 }
 
@@ -44,7 +57,7 @@
   display: none;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .header .nav .site-nav3 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -74,9 +87,9 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .header .nav {
-    width: 1160px;
+    width: 1280px;
   }
 }
 
@@ -90,7 +103,7 @@
   padding: 0;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .header .nav .menu-button {
     display: none;
   }
@@ -137,15 +150,18 @@ p {
 }
 
 body {
-  font-family: 'MontserratB', sans-serif;
   margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #858585;
+  font-size: 11px;
+  line-height: 20px;
+  font-weight: 400;
 }
 
 .container {
   width: 320px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -154,9 +170,9 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .container {
-    width: 1200px;
+    width: 1280px;
   }
 }
 
@@ -269,26 +285,78 @@ body {
 .hero .hero-title {
   font-size: 20px;
   line-height: 29px;
-  margin-top: 50px;
+  font-weight: 800;
+  color: #18191d;
+}
+
+@media screen and (max-width: 767px) {
+  .hero .hero-title {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero .hero-title {
+    font-size: 26px;
+    line-height: 33px;
+    font-weight: 800;
+    color: #18191d;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero .hero-title {
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 800;
+    color: #18191d;
+  }
 }
 
 .hero .hero-slogan {
+  color: #b9b9b9;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 17px;
+  letter-spacing: 0.6px;
   margin-top: 30px;
-  color: #ccc;
+  margin-bottom: 4px;
+}
+
+.hero .hero-subtitle {
+  width: 280px;
+  color: #18191d;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 17px;
+  letter-spacing: 0.6px;
 }
 
 .hero .hero-subtitle b {
   color: #ff6b09;
 }
 
+@media screen and (min-width: 768px) {
+  .hero .hero-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 65px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .hero .hero-button {
   display: block;
-  width: 260px;
+  width: 250px;
   height: 48px;
   background-color: #ff6b09;
-  padding-top: 14px;
-  padding-bottom: 14px;
   color: #fff;
+  font-weight: 700;
+  font-size: 11px;
+  text-transform: uppercase;
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -296,14 +364,41 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero .hero-button {
+    margin-left: 0;
+  }
 }
 
 .hero .hero-img {
   display: block;
   margin: 0 auto;
-  width: 208px;
+  width: 215px;
   height: auto;
-  margin-top: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .hero .hero-img {
+    width: 215px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero .hero-img {
+    width: 375px;
+    margin-left: 50px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero .hero-img {
+    width: 675px;
+  }
 }
 
 .hero .hero-benefits {
@@ -311,15 +406,30 @@ body {
   margin-top: 77px;
 }
 
+@media screen and (min-width: 768px) {
+  .hero .hero-benefits {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 115px;
+    padding: 0;
+  }
+}
+
 .hero .hero-benefits .title {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 20px;
-  color: #18191d;
+  color: #111518;
+  letter-spacing: 0.03em;
 }
 
 .hero .hero-benefits .item {
   padding-left: 68px;
   position: relative;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #18191d;
 }
 
 .hero .hero-benefits .item:not(:last-child) {
@@ -341,11 +451,6 @@ body {
 }
 
 .hero .hero-benefits .item.icon2::before {
-  font-size: 13px;
-  line-height: 20px;
-  color: #18191d;
-  font-family: 'MontserratB', sans-serif;
-  padding-left: 68px;
   background-image: url(../../images/icon2.png);
   content: '';
   background-repeat: no-repeat;
