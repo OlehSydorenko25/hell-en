@@ -72,9 +72,14 @@
 
   .close-modal {
     position: absolute;
-    top: 26px;
-    right: 0px;
+    top: 35px;
+    right: 2px;
     fill: #fff;
+
+    &:hover,
+    &:focus {
+      fill: #ff6b09;
+    }
   }
 
   .modal-site-nav {

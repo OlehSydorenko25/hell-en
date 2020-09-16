@@ -260,9 +260,13 @@ body {
 
 .modal .close-modal {
   position: absolute;
-  top: 26px;
-  right: 0px;
+  top: 35px;
+  right: 2px;
   fill: #fff;
+}
+
+.modal .close-modal:hover, .modal .close-modal:focus {
+  fill: #ff6b09;
 }
 
 .modal .modal-site-nav {
@@ -459,6 +463,16 @@ body {
   line-height: 20px;
   color: #111518;
   letter-spacing: 0.03em;
+  background-color: #fff;
+  margin-left: -15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 25px;
+  height: 43px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (min-width: 1280px) {
@@ -469,81 +483,29 @@ body {
 }
 
 .hero .hero-benefits .item {
-  padding-left: 68px;
   position: relative;
   font-size: 13px;
   font-weight: 700;
   line-height: 20px;
   color: #18191d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-@media screen and (min-width: 1280px) {
-  .hero .hero-benefits .item {
-    padding-left: 90px;
-  }
+.hero .hero-benefits .item .icon {
+  border: 2px solid #ff6b09;
+  padding: 11px 13px;
+  max-width: 60px;
+  max-height: 60px;
 }
 
 .hero .hero-benefits .item:not(:last-child) {
   margin-bottom: 30px;
-}
-
-.hero .hero-benefits .item.icon1::before {
-  background-image: url(./../images/icon1.png);
-  content: '';
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: inline-block;
-  height: 60px;
-  width: 60px;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-@media screen and (min-width: 1280px) {
-  .hero .hero-benefits .item.icon1::before {
-    width: 100px;
-    height: 100px;
-  }
-}
-
-.hero .hero-benefits .item.icon2::before {
-  background-image: url(./../images/icon2.png);
-  content: '';
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: inline-block;
-  height: 60px;
-  width: 60px;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-@media screen and (min-width: 1280px) {
-  .hero .hero-benefits .item.icon2::before {
-    width: 100px;
-    height: 100px;
-  }
-}
-
-.hero .hero-benefits .item.icon3::before {
-  background-image: url(./../images/icon3.png);
-  content: '';
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: inline-block;
-  height: 60px;
-  width: 60px;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-@media screen and (min-width: 1280px) {
-  .hero .hero-benefits .item.icon3::before {
-    width: 100px;
-    height: 100px;
-  }
 }
 /*# sourceMappingURL=main.css.map */
