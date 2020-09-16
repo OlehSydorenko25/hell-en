@@ -482,6 +482,7 @@ body {
   .hero .hero-benefits .title {
     min-width: 366px;
     height: 68px;
+    padding-left: 0;
   }
 }
 
