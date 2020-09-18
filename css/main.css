@@ -29,7 +29,7 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1314px) {
   .header .hero-button-2 {
     margin-right: 0;
     width: 336px;
@@ -56,13 +56,14 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 50px;
+  padding: 0 20px;
 }
 
 .header .nav .site-nav3 {
   display: none;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1314px) {
   .header .nav .site-nav3 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -90,12 +91,13 @@
   .header .nav {
     width: 768px;
     margin-bottom: 84px;
+    padding: 0 40px;
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1314px) {
   .header .nav {
-    width: 1280px;
+    width: 1314px;
     margin-bottom: 45px;
   }
 }
@@ -110,7 +112,7 @@
   padding: 0;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1314px) {
   .header .nav .menu-button {
     display: none;
   }
@@ -177,9 +179,9 @@ body {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1314px) {
   .container {
-    width: 1280px;
+    width: 1314px;
   }
 }
 
@@ -220,6 +222,7 @@ body {
 .modal .modal-box {
   position: relative;
   width: 320px;
+  padding: 0 20px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -261,7 +264,7 @@ body {
 .modal .close-modal {
   position: absolute;
   top: 35px;
-  right: 2px;
+  right: 23px;
   fill: #fff;
 }
 
@@ -306,6 +309,16 @@ body {
   height: 28px;
 }
 
+.hero {
+  padding: 0 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 0 40px;
+  }
+}
+
 .hero .hero-title {
   font-size: 20px;
   line-height: 29px;
@@ -322,7 +335,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1314px) {
   .hero .hero-title {
     font-size: 48px;
     line-height: 58px;
@@ -341,7 +354,7 @@ body {
   margin-bottom: 4px;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1314px) {
   .hero .hero-slogan {
     font-size: 18px;
     line-height: 22px;
@@ -361,7 +374,7 @@ body {
   color: #ff6b09;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1314px) {
   .hero .hero-subtitle {
     font-size: 18px;
     line-height: 22px;
@@ -405,7 +418,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1314px) {
   .hero .hero-button {
     margin-top: 40px;
     height: 70px;
@@ -437,7 +450,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1314px) {
   .hero .hero-img {
     width: 675px;
   }
@@ -478,7 +491,7 @@ body {
           align-items: center;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1314px) {
   .hero .hero-benefits .title {
     min-width: 366px;
     height: 68px;
@@ -507,7 +520,7 @@ body {
   max-height: 60px;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1314px) {
   .hero .hero-benefits .item .icon {
     padding: 22px 25px 22px 17px;
     max-width: 100px;
